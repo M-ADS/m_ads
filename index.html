@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            margin-bottom:10px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        .container{
+        padding: 10px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 35px;
+            position: sticky;
+            top: 0;
+            background-color: #f9f9f9;
+            z-index: 100;
+            padding:10px ;
+            border-radius:5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav ul li{
+            display: inline-block;
+            margin: 0 5px;
+        }
+        ul{
+            list-style: none;
+        }
+        nav ul a{
+            text-decoration: none;
+            color: black;
+        }
+        nav ul a:hover {
+            color:#007bff;
+        }
+        @media (min-width: 768px) {
+            nav ul li{
+                margin: 0 20px;
+            }
+        }
+        .started{
+            margin-bottom: 40px;
+            background: url('your-image.jpg') no-repeat center center/cover;
+            padding: 60px 20px;
+            border-radius: 10px;
+            color: #333;
+            text-align: center;
+
+        }
+        .btn-start{
+            background-color: #15a1ff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .started .btn-start{
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            background: linear-gradient(135deg, #15a1ff, #007bff);
+            box-shadow: 0 4px 8px rgba(21, 161, 255, 0.4);
+        }
+        .card-title1{
+            font-size: 20px;
+        }
+        #services {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        @media (min-width: 768px) {
+            #services {
+                flex-direction: row;
+                width: auto;
+            }
+        }
+        #services div{
+            padding:5px 15px;
+            border-radius: 10px;
+            margin: 10px;
+            flex: 1;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 90%;
+            border: 1px solid #eee;
+            background-color: white;
+        }
+        #services div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        #services div i {
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+        @media (min-width: 768px) {
+            #services div {
+                width: auto;
+            }
+        }
+        #services div h4 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .service-web-development i {
+            color: #15a1ff;
+        }
+
+        .service-mobile-app i {
+            color: #ff6f61;
+        }
+
+        .service-ui-ux i {
+            color: #42f5c7;
+        }
+
+        .footer {
+            background-color: #151515;
+            color: #eee;
+            padding: 40px 0 20px;
+            margin-top: 50px;
+            text-align: center;
+        }
+        .footer-content h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .footer-content p {
+            font-size: 14px;
+            color: #ccc;
+        }
+        .footer .socials {
+            margin-top: 15px;
+        }
+        .footer .socials a {
+            color: #15a1ff;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .footer .socials a:hover {
+            color: white;
+        }
+        .footer-bottom {
+            border-top: 1px solid #333;
+            margin-top: 20px;
+            padding-top: 10px;
+            font-size: 12px;
+            color: #777;
+        }
+        .about-section {
+            background-color: #f1f1f1;
+            padding: 50px 10%;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 50px;
+        }
+        .about-section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .about-section p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .about-section .btn-about {
+            background-color: #15a1ff;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 5px;
+            font-size: 18px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .about-section .btn-about:hover {
+            background-color: #007bff;
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <div id="home" class="container">
+        <nav>
+            <h2><i class="fas fa-home"></i> hi</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="started">
+            <h1>Welcome to Our Website</h1>
+            <br>
+            <p>We are a team of passionate developers, creating solutions for businesses and individuals through innovative web design and development. Let us help you bring your vision to life.</p>
+            <br>
+            <a class="btn-start" href="#about">Learn More</a>
+        </section>
+        <section id="about" class="about-section">
+            <h2>About us</h2>
+            <p>We are a team dedicated to providing innovative technical solutions to our clients, focusing on developing websites and applications using the latest tools and technologies.</p>
+            <a href="#services" class="btn-about">Discover our services</a>
+        </section>
+        <h3 class="card-title1">Our Services</h3>
+        <section id="services">
+            <div class="service-web-development">
+                <i class="fas fa-code fa-2x"></i>
+                <h4>Web Development</h4>
+                <p>We specialize in creating responsive and interactive websites that enhance user experience and engagement.</p>
+            </div>
+            <div class="service-mobile-app">
+                <i class="fas fa-mobile-alt fa-2x"></i>
+                <h4>Mobile App Development</h4>
+                <p>We build custom mobile applications tailored to your business needs, ensuring a seamless mobile experience.</p>
+            </div>
+            <div class="service-ui-ux">
+                <i class="fas fa-paint-brush fa-2x"></i>
+                <h4>UI/UX Design</h4>
+                <p>Our design team focuses on creating intuitive user interfaces and experiences that captivate users and drive conversions.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <h3>Our Company</h3>
+            <p>Passionate about creating great digital experiences for businesses and individuals.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Our Company | All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>
